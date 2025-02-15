@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="bg-[#E84C3D] text-white relative overflow-hidden ">
+    <section className="bg-[#E84C3D] text-white relative overflow-hidden flex items-center justify-center">
       <div>
         <Image
           src={dogimage}
@@ -19,8 +19,8 @@ const Hero = () => {
         <div className="absolute inset-0 bg-black opacity-40 md:hidden"></div>
       </div>
 
-      <div className="container mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
-        <article className="grid grid-1 lg:grid-cols-2 gap-8 ">
+      <div className=" container  lg:mx-20 mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
+        <article className="w-full grid grid-1 lg:grid-cols-2 gap-8 ">
           <div className="space-y-6">
             <h1 className="text-3xl font-semibold md:text-4xl lg:5xl leading-10">
               Seu pet merece cuidado, carinho e atenção especial.
