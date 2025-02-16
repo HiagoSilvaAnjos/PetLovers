@@ -45,10 +45,14 @@ const About = () => {
           >
             <h2 className="text-4xl font-bold">Sobre</h2>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est
-              rerum esse, doloribus ipsa ullam, nobis beatae sed nostrum
-              voluptatem illo maiores inventore. Necessitatibus illum eaque
-              pariatur veniam facilis, nesciunt unde.
+              Desde 2006, a Pet Lovers tem sido referência no cuidado e
+              bem-estar dos animais de estimação. Nossa equipe é formada por
+              mais de 10 veterinários altamente qualificados, prontos para
+              oferecer atendimento especializado e garantir a saúde do seu pet.
+              Trabalhamos com os melhores produtos e serviços do mercado, sempre
+              priorizando a qualidade e o carinho que seu pet merece. Seja para
+              consultas, vacinas ou produtos essenciais, estamos aqui para
+              oferecer o melhor.
             </p>
 
             <ul className="space-y-4">
