@@ -22,15 +22,20 @@ const Hero = () => {
       <div className=" container  lg:mx-20 mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
         <article className="w-full grid grid-1 lg:grid-cols-2 gap-8 ">
           <div className="space-y-6">
-            <h1 className="text-3xl font-semibold md:text-5xl lg:6xl leading-10">
+            <h1
+              data-aos="fade-down"
+              className="text-3xl font-semibold md:text-5xl lg:6xl leading-10"
+            >
               Seu pet merece cuidado, carinho e atenção especial.
             </h1>
-            <p className="lg:text-lg">
+            <p data-aos="fade-right" className="lg:text-lg">
               Oferecemos os melhores serviços para garantir o bem-estar e a
               felicidade do seu amigo de quatro patas.
             </p>
 
             <a
+              data-aos="fade-up"
+              data-aos-delay="500"
               href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
               target="_blank"
               className="gap-2 w-fit bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center"
