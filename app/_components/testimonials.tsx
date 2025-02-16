@@ -57,7 +57,7 @@ const Testimonials = () => {
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center">Depoimentos</h2>
 
-        <div className="relative max-w-4xl mx-auto">
+        <div className="relative max-w-4xl mx-auto" data-aos="fade-left">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex ">
               {testimonials.map((testimonial, index) => (

@@ -76,7 +76,7 @@ const Services = () => {
       <div className="container mx-auto px-4 md:px-8 lg:px-12 ">
         <h2 className="text-4xl font-bold mb-12 text-center">Serviços</h2>
 
-        <div className="relative">
+        <div className="relative" data-aos="fade-right">
           <div className="overflow-hidden" ref={emblaRef}>
             <div className="flex ">
               {services.map((service, index) => (
@@ -104,8 +104,8 @@ const Services = () => {
 
                     <div className="border-t border-gray-700 pt-4 flex items-center justify-between">
                       <div className="flex items-center gap-2 text-sm">
-                        <div className="flex items-center gap-2 text-sm">
-                          <Clock className="h-5 w-5" />
+                        <div className="flex items-center gap-2 sm:text-sm text-[10px]">
+                          <Clock className="sm:h-5 sm:w-5 h-4 w-4" />
                           <span>Duração: {service.duration}</span>
                         </div>
                       </div>
@@ -113,10 +113,10 @@ const Services = () => {
                       <a
                         href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações sobre ${service.linkText}`}
                         target="_blank"
-                        className="gap-2 w-fit bg-slate-700 px-5 py-2 rounded-md font-semibold flex items-center justify-center text-white hover:bg-opacity-60 transition duration-300"
+                        className="gap-2 w-fit sm:text-sm text-[10px] bg-slate-700 px-5 py-2 rounded-md font-semibold flex items-center justify-center text-white hover:bg-opacity-60 transition duration-300"
                       >
                         Entrar em contato
-                        <WhatsappLogo className="h-5 w-5" />
+                        <WhatsappLogo className="sm:h-5 sm:w-5 h-4 w-4" />
                       </a>
                     </div>
                   </article>

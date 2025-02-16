@@ -13,6 +13,7 @@ const About = () => {
             className="relative"
             data-aos="fade-up-right"
             data-aos-delay="300"
+            data-aos-anchor-placement="top-bottom"
           >
             <div className="relative w-full h-[400px] rounded-3xl overflow-hidden">
               <Image
@@ -40,6 +41,7 @@ const About = () => {
             className="space-y-6 mt-10"
             data-aos="fade-up-left"
             data-aos-delay="300"
+            data-aos-anchor-placement="top-bottom"
           >
             <h2 className="text-4xl font-bold">Sobre</h2>
             <p>
@@ -66,15 +68,16 @@ const About = () => {
               <a
                 href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
                 target="_blank"
-                className="gap-2 w-fit bg-[#E84C3D] px-5 py-2 rounded-md font-semibold flex items-center justify-center text-white"
+                className="gap-2 w-fit bg-[#E84C3D] sm:text-sm text-[10px] px-5 py-2  rounded-md font-semibold flex items-center justify-center text-white hover:bg-opacity-75 transition duration-300"
               >
-                <WhatsappLogo className="h-5 w-5" /> Contato via WhatsApp
+                <WhatsappLogo className="sm:h-5 sm:w-5 h-4 w-4" /> Contato via
+                WhatsApp
               </a>
               <a
                 href="#"
-                className="gap-2 w-fit  px-5 py-2 rounded-md font-semibold flex items-center justify-center "
+                className="gap-2 w-fit  px-5 py-2 sm:text-sm text-[10px] rounded-md font-semibold flex items-center justify-center  hover:bg-slate-500 hover:text-white transition duration-300"
               >
-                <MapPin className="h-5 w-5" /> Endereço da Loja
+                <MapPin className="sm:h-5 sm:w-5 h-4 w-4" /> Endereço da Loja
               </a>
             </div>
           </div>

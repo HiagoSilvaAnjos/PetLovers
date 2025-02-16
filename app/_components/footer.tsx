@@ -32,7 +32,9 @@ const Footer = () => {
             {brands.map((brand, index) => (
               <div
                 key={index}
-                className="bg-white p-4 rounded-lg flex items-center justify-center hover:scale-110 duration-300 transition"
+                data-aos="fade-down-right"
+                data-aos-delay={index * 150}
+                className="bg-white p-4 rounded-lg flex items-center justify-center transition  group"
               >
                 <Image
                   src={brand.logo}
@@ -44,7 +46,7 @@ const Footer = () => {
                     width: "auto",
                     height: "auto",
                   }}
-                  className="object-contain "
+                  className="object-contain transition-transform group-hover:scale-110 duration-300"
                 />
               </div>
             ))}
@@ -60,7 +62,7 @@ const Footer = () => {
             <a
               href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
               target="_blank"
-              className="gap-2 w-fit bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center"
+              className="gap-2 w-fit bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center hover:bg-opacity-75 transition duration-300"
             >
               <WhatsappLogo className="h-5 w-5" />
               Contato via WhatsApp
@@ -76,13 +78,25 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-2">Redes Sociais</h3>
             <div className="flex gap-4">
-              <a href="#" target="_blank" className="">
+              <a
+                href="#"
+                target="_blank"
+                className="hover:text-slate-600 transition duration-300"
+              >
                 <FacebookLogo className="h-8 w-8" />
               </a>
-              <a href="#" target="_blank" className="">
+              <a
+                href="#"
+                target="_blank"
+                className="hover:text-slate-600 transition duration-300"
+              >
                 <InstagramLogo className="h-8 w-8" />
               </a>
-              <a href="#" target="_blank" className="">
+              <a
+                href="#"
+                target="_blank"
+                className="hover:text-slate-600 transition duration-300"
+              >
                 <YoutubeLogo className="h-8 w-8" />
               </a>
             </div>
