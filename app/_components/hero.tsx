@@ -22,7 +22,7 @@ const Hero = () => {
       <div className=" container  lg:mx-20 mx-auto pt-16 pb-16 md:pb-0 px-4 relative">
         <article className="w-full grid grid-1 lg:grid-cols-2 gap-8 ">
           <div className="space-y-6">
-            <h1 className="text-3xl font-semibold md:text-4xl lg:5xl leading-10">
+            <h1 className="text-3xl font-semibold md:text-5xl lg:6xl leading-10">
               Seu pet merece cuidado, carinho e atenção especial.
             </h1>
             <p className="lg:text-lg">
