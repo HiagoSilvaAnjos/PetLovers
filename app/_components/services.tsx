@@ -55,11 +55,11 @@ const services = [
 
 const Services = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: true,
+    loop: false,
     align: "start",
     slidesToScroll: 1,
     breakpoints: {
-      "(min-width: 768px)": { slidesToScroll: 3, loop: true },
+      "(min-width: 768px)": { slidesToScroll: 3 },
     },
   });
 
@@ -73,8 +73,8 @@ const Services = () => {
 
   return (
     <section className="bg-white py-16">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12">Serviços</h2>
+      <div className="container mx-auto px-4 md:px-8 lg:px-12 ">
+        <h2 className="text-4xl font-bold mb-12 text-center">Serviços</h2>
 
         <div className="relative">
           <div className="overflow-hidden" ref={emblaRef}>
@@ -82,7 +82,7 @@ const Services = () => {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/3)] px-3"
+                  className="flex-[0_0_100%] min-w-0 md:flex-[0_0_calc(100%/2)] xl:md:flex-[0_0_calc(100%/3)] px-3"
                 >
                   <article className="cursor-pointer bg-[#1E293B] text-white rounded-2xl p-6 space-y-4 h-full flex flex-col">
                     <div className="flex-1 flex items-start justify-between">
