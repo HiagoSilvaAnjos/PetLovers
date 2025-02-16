@@ -14,7 +14,7 @@ const About = () => {
               <Image
                 src={about1img}
                 alt="Imagem do doguinho e gato"
-                className="object-cover hover:scale-110 duration-300"
+                className="object-cover hover:scale-110 duration-300 transition"
                 priority
                 quality={100}
                 fill
@@ -56,7 +56,8 @@ const About = () => {
 
             <div className="flex gap-2">
               <a
-                href="#"
+                href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
+                target="_blank"
                 className="gap-2 w-fit bg-[#E84C3D] px-5 py-2 rounded-md font-semibold flex items-center justify-center text-white"
               >
                 <WhatsappLogo className="h-5 w-5" /> Contato via WhatsApp

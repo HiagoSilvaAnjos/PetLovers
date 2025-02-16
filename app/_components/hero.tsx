@@ -31,7 +31,8 @@ const Hero = () => {
             </p>
 
             <a
-              href="#"
+              href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações`}
+              target="_blank"
               className="gap-2 w-fit bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center"
             >
               <WhatsappLogo className="h-5 w-5" />

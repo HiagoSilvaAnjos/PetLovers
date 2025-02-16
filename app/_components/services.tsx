@@ -95,18 +95,24 @@ const Services = () => {
                           <p className="text-gray-400 text-sm select-none">
                             {service.description}
                           </p>
+                          <p className="my-1 text-sm select-none">
+                            Preço: {service.price}
+                          </p>
                         </div>
                       </div>
                     </div>
 
                     <div className="border-t border-gray-700 pt-4 flex items-center justify-between">
                       <div className="flex items-center gap-2 text-sm">
-                        <Clock className="h-5 w-5" />
-                        <span>{service.duration}</span>
+                        <div className="flex items-center gap-2 text-sm">
+                          <Clock className="h-5 w-5" />
+                          <span>Duração: {service.duration}</span>
+                        </div>
                       </div>
 
                       <a
-                        href="#"
+                        href={`https://wa.me/556799998800?text=Olá vim pelo site e gostaria de mais informações sobre ${service.linkText}`}
+                        target="_blank"
                         className="gap-2 w-fit bg-slate-700 px-5 py-2 rounded-md font-semibold flex items-center justify-center text-white hover:bg-opacity-60 transition duration-300"
                       >
                         Entrar em contato
