@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import AosInit from "./_components/aos-init";
+import walpaper from "../public/walpaper.png";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,10 +34,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://pet-lovers-ten.vercel.app/images/preview.jpg",
+        url: walpaper.src,
         width: 1200,
         height: 630,
-        alt: "Pet Lovers - Seu pet em boas mãos",
+        alt: "Pet Lovers - Seu pet em boas mãos", // Garantindo a acessibilidade
       },
     ],
   },
@@ -45,7 +46,12 @@ export const metadata: Metadata = {
     title: "Pet Lovers - O melhor para o seu pet!",
     description:
       "Cuidamos do seu pet com amor! Encontre os melhores produtos e serviços para cães e gatos na Pet Lovers.",
-    images: ["https://pet-lovers-ten.vercel.app/images/preview.jpg"],
+    images: [
+      {
+        url: walpaper.src,
+        alt: "Pet Lovers - Seu pet em boas mãos", // Adicionando alt para acessibilidade
+      },
+    ],
   },
   icons: {
     icon: "/favicon.ico",
